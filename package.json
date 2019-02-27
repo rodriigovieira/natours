@@ -1,0 +1,16 @@
+{
+  "name": "Natours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "node-sass sass/style.scss css/style.css -w",
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
