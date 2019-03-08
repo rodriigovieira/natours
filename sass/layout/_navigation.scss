@@ -26,6 +26,11 @@
     box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3.5rem;
+    }
   }
 
   &__background {
@@ -38,6 +43,11 @@
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 20;
     transition: all 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 4rem;
+    }
   }
 
   &__nav {
@@ -58,6 +68,10 @@
     list-style: none;
     @include center-transform;
     text-align: center;
+
+    @include respond(phone) {
+      margin-top: 4rem;
+    }
   }
 
   &__item {
@@ -78,6 +92,12 @@
 
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
       background-size: 250%;
+
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+        padding: .8rem 1.6rem;
+      }
+
     }
 
     span {

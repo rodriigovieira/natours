@@ -8,12 +8,20 @@
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
   // Nesting declarations block
 
   &__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
+
+    @include respond(phone) {
+      top: 5rem;
+    }
   }
 
   &__logo {
