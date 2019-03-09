@@ -112,6 +112,9 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-small {
+      margin-top: -.5rem; } }
 
 .u-margin-bottom-average {
   margin-bottom: 2.5rem !important; }
@@ -393,7 +396,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -419,7 +422,11 @@ body {
         transform: translate(0, 0);
         padding: 7rem 4rem 4rem 4rem; }
       .card__price-box {
-        margin-bottom: 3rem; }
+        margin-bottom: 3rem; } }
+    @media (max-width: 75em) and (max-width: 37.5em) {
+      .card__price-box {
+        margin-bottom: 1.5rem; } }
+  @media (max-width: 75em) {
       .card__price-value {
         font-size: 6rem;
         font-weight: 100; } }
@@ -629,14 +636,35 @@ body {
   .popup__left {
     width: 33.33333%;
     display: table-cell; }
+    @media (max-width: 75em) {
+      .popup__left {
+        display: inline-block;
+        width: 100%; } }
   .popup__right {
     vertical-align: middle;
     padding: 3rem 5rem;
     width: 66.66667%;
     display: table-cell; }
+    @media (max-width: 75em) {
+      .popup__right {
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        padding: 1rem 3rem; } }
   .popup__photo {
     display: block;
     width: 100%; }
+    @media (max-width: 75em) {
+      .popup__photo {
+        width: 50%; }
+        .popup__photo--1 {
+          object-fit: cover;
+          float: right;
+          height: 30vh; }
+        .popup__photo--2 {
+          object-fit: cover;
+          float: left;
+          height: 30vh; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -672,6 +700,9 @@ body {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     line-height: 1; }
+    @media (max-width: 56.25em) {
+      .popup__close, .popup__close:link, .popup__close:visited {
+        font-size: 9rem; } }
   .popup__close:hover {
     color: #55c57a; }
 

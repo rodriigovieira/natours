@@ -25,14 +25,19 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span> About Natours</a>
+                    <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span> About
+                            Natours</a>
                     </li>
-                    <li class="navigation__item"><a href="#features" class="navigation__link"><span>02</span> Your Benefits</a>
+                    <li class="navigation__item"><a href="#features" class="navigation__link"><span>02</span> Your
+                            Benefits</a>
                     </li>
-                    <li class="navigation__item"><a href="#tours" class="navigation__link"><span>03</span> Popular Tours</a>
+                    <li class="navigation__item"><a href="#tours" class="navigation__link"><span>03</span> Popular
+                            Tours</a>
                     </li>
-                    <li class="navigation__item"><a href="#stories" class="navigation__link"><span>04</span> Stories</a></li>
-                    <li class="navigation__item"><a href="#book-now" class="navigation__link"><span>05</span> Contact</a></li>
+                    <li class="navigation__item"><a href="#stories" class="navigation__link"><span>04</span> Stories</a>
+                    </li>
+                    <li class="navigation__item"><a href="#book-now" class="navigation__link"><span>05</span>
+                            Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -306,7 +311,7 @@
                                 id atque dignissimos labore in, obcaecati eius ex perspiciatis? Enim numquam temporibus
                                 quidem, saepe impedit ratione voluptatum!
                             </p>
-                        </div>
+                        </div>O
                     </div>
                 </div>
 
@@ -367,7 +372,13 @@
 
         <footer class="footer">
             <div class="footer__logo-box u-margin-bottom-big">
-                <img src="img/logo-green-2x.png" alt="Logo" class="footer__logo" />
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                        media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Logo" />
+                </picture>
+
+                <!-- <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Logo" class="footer__logo" /> -->
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -381,7 +392,8 @@
                                     class="footer__link footer__link--clockwise">Careers</a></li>
                             <li class="footer__item"><a href="#" class="footer__link footer__link--reverse">Privacy
                                     Policy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link footer__link--amplify">Terms</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link footer__link--amplify">Terms</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -402,8 +414,8 @@
 
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src="../img/nat-8.jpg" alt="Tour Photo" class="popup__photo">
-                    <img src="../img/nat-9.jpg" alt="Tour Photo" class="popup__photo">
+                    <img src="../img/nat-8.jpg" alt="Tour Photo" class="popup__photo popup__photo--1">
+                    <img src="../img/nat-9.jpg" alt="Tour Photo" class="popup__photo popup__photo--2">
                 </div>
 
                 <div class="popup__right">
