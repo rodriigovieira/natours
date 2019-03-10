@@ -4,11 +4,11 @@
     visibility: hidden;
   }
 
-  &__checkbox:checked ~ &__background {
+  &:target &__checkbox:checked ~ &__background {
     transform: scale(100);
   }
 
-  &__checkbox:checked ~ &__nav {
+  &:target &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
     visibility: visible;
